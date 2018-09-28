@@ -28,4 +28,21 @@
 	- image - matrix/array
 	- value - any positive integer(int)
 
+# IPython Usage
+	- # convert the image to binary
+	- import cv2
+	- image = cv2.imread('image.jpg')
+	- gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    - (thresh, image_binary) = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+	- import rlsa
+	- image_rlsa_horizontal = rlsa.rlsa(True, False, image_binary, 10)
+
+# Input
+
+	- ![alt text](https://github.com/Vasistareddy/python-rlsa/blob/master/image.jpg)
+
+# Output
+
+	- ![alt text](https://github.com/Vasistareddy/python-rlsa/blob/master/image_rlsa_horizontal.jpg)
+
 
