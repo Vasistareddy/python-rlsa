@@ -39,10 +39,10 @@
 
 # Input
 
-	- ![alt text](https://github.com/Vasistareddy/python-rlsa/blob/master/image.jpg)
+![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/image.jpg)
 
 # Output
 
-	- ![alt text](https://github.com/Vasistareddy/python-rlsa/blob/master/image_rlsa_horizontal.jpg)
+![Output](https://github.com/Vasistareddy/python-rlsa/blob/master/image_rlsa_horizontal.jpg)
 
 
