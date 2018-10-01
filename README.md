@@ -2,6 +2,10 @@
 
 	- RUN LENGTH SMOOTHING ALGORITHM(RLSA) is a method mainly used for block segmentation and text discrimination.
 
+# Input & Output
+![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/image.jpeg)
+- 4 images are merged. Input, Horizontal RLSA, Vertical RLSA, Horizontal and Vertical RLSA
+
 # Prerequisites
 
 	- Image must be a binary(255's/1's/0's)
@@ -27,22 +31,16 @@
 	- vertial - boolean
 	- image - matrix/array
 	- value - any positive integer(int)
+	- rlsa(horizontal=True/False, vertical=True/False, image(binary), value(int))
 
 # IPython Usage
 	- # convert the image to binary
 	- import cv2
 	- image = cv2.imread('image.jpg')
 	- gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    - (thresh, image_binary) = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+	- (thresh, image_binary) = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 	- import rlsa
 	- image_rlsa_horizontal = rlsa.rlsa(True, False, image_binary, 10)
 
-# Input
-
-![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/image.jpg)
-
-# Output
-
-![Output](https://github.com/Vasistareddy/python-rlsa/blob/master/image_rlsa_horizontal.jpg)
 
 
