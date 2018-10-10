@@ -27,12 +27,11 @@
 	- rlsa
 
 # Parameters
-
+	- image - numpy.ndarray(required)
 	- horizantal - boolean
 	- vertial - boolean
-	- image - matrix/array
 	- value - any positive integer(int)
-	- rlsa(horizontal=True/False, vertical=True/False, image(binary), value(int))
+	- rlsa(image(ndarray), horizontal=True/False, vertical=True/False, value(int))
 
 # IPython Usage
 	- # convert the image to binary
@@ -41,7 +40,7 @@
 	- gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 	- (thresh, image_binary) = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 	- import rlsa
-	- image_rlsa_horizontal = rlsa.rlsa(True, False, image_binary, 10)
+	- image_rlsa_horizontal = rlsa.rlsa(image_binary, True, False, 10)
 
 
 
