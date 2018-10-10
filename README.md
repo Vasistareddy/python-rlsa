@@ -4,7 +4,7 @@
 
 # Input & Output
 ![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/images/image.jpeg)
-- 4 images are merged. Input, Horizontal RLSA, Vertical RLSA, Horizontal and Vertical RLSA
+- Input              Horizontal RLSA              Vertical RLSA              Horizontal and Vertical RLSA
 
 # Prerequisites
 
