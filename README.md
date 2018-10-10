@@ -5,7 +5,7 @@
 
 # Input & Output
 ![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/images/image.jpeg)
-- Input--------------------------Horizontal RLSA---------------------------Vertical RLSA----------------------------Horizontal and Vertical RLSA
+- Input-------------------------------Horizontal RLSA---------------------------Vertical RLSA----------------------------Horizontal and Vertical RLSA
 
 # Prerequisites
 
