@@ -3,7 +3,7 @@
 	- RUN LENGTH SMOOTHING ALGORITHM(RLSA) is a method mainly used for block segmentation and text discrimination.
 
 # Input & Output
-![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/image.jpeg)
+![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/images/image.jpeg)
 - 4 images are merged. Input, Horizontal RLSA, Vertical RLSA, Horizontal and Vertical RLSA
 
 # Prerequisites
