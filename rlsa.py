@@ -1,4 +1,6 @@
-def rlsa(horizontal=True, vertical=True, image=None, value=0):
+from typing import List
+
+def rlsa(image: List[int], horizontal: bool = True, vertical: bool = True, value: int = 0) -> List[int]:
     # image must be binary
     if image is not None:
         value = value if value>=0 else 0
