@@ -18,15 +18,21 @@
 	- The "value" varies among the different images.
 
 # Test Case
+
 	- value = 3
 	- input - [0, 0, 255, 255, 255, 0, 0, 255, 0, 0, 255, 0, 255]
 	- output - [0, 0, 255, 255, 255, 0, 0, 0, 0, 0, 0, 0, 255]
+
+# Install requirements
+
+	- pip install -r requirements.txt
 
 # Method
 
 	- rlsa
 
 # Parameters
+
 	- image - numpy.ndarray(required)
 	- horizantal - boolean
 	- vertial - boolean
@@ -34,6 +40,7 @@
 	- rlsa(image(ndarray), horizontal=True/False, vertical=True/False, value(int))
 
 # IPython Usage
+
 	- # convert the image to binary
 	- import cv2
 	- image = cv2.imread('image.jpg')

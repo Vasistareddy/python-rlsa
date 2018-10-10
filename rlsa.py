@@ -1,7 +1,7 @@
 from typing import List
 import numpy
 
-def rlsa(image: List[int], horizontal: bool = True, vertical: bool = True, value: int = 0) -> List[int]:
+def rlsa(image: numpy.ndarray, horizontal: bool = True, vertical: bool = True, value: int = 0) -> numpy.ndarray:
     # image must be binary
     if isinstance(image, numpy.ndarray):
         value = value if value>=0 else 0
