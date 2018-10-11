@@ -26,6 +26,8 @@
 # Install requirements
 
 	- pip install -r requirements.txt
+	- if python.__version__ < 3.5: pip install typing
+	- **https://pypi.org/project/typing/**
 
 # Method
 
