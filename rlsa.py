@@ -9,14 +9,15 @@ def iteration(image: numpy.ndarray, value: int) -> numpy.ndarray:
 
     rows, cols = image.shape
     for row in range(0,rows):
-        count = 0
         try:
-            start = list(image[row:]).index(0) # to start the conversion from the 0 pixel
+            start = image[row].tolist().index(0) # to start the conversion from the 0 pixel
         except ValueError:
-            start = 0
+            start = 0 # if '0' is not present in that row
+
+        count = start
         for col in range(start, cols):
             if image[row, col] == 0:
-                if (col-count) < value:
+                if (col-count) <= value and (col-count) > 0:
                     image[row, count:col] = 0               
                 count = col  
     return image 
@@ -42,7 +43,7 @@ def rlsa(image: numpy.ndarray, horizontal: bool = True, vertical: bool = True, v
 
         except (AttributeError, ValueError) as e:
             image = None
-            print("ERROR:\n")
+            print("ERROR: ", e, "\n")
             print('Image must be an numpy ndarray and must be in "binary". Use Opencv/PIL to convert the image to binary.\n')
             print("import cv2;\nimage=cv2.imread('path_of_the_image');\ngray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY);\n\
                 (thresh, image_binary) = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)\n")
