@@ -4,8 +4,8 @@
 	- It mainly uses in Document Image Processing to extract out the ROI(region of interest) like block-of-text/title/content with applied heuristics.
 
 # Input & Output
-![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/images/image.jpeg)
-- **Input**-------------------------------**Horizontal RLSA**----------------------**Vertical RLSA**------------------------**Horizontal and Vertical RLSA**
+	- **output of 3 cases with value "10" are in the below image**
+![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/test_images/image1.jpeg)
 
 # Prerequisites
 
@@ -39,7 +39,6 @@
 	- horizantal - boolean
 	- vertial - boolean
 	- value - any positive integer(int)
-	- rlsa(image(ndarray), horizontal=True/False, vertical=True/False, value(int))
 
 # IPython Usage
 
@@ -48,6 +47,7 @@
 	- image = cv2.imread('image.jpg')
 	- gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 	- (thresh, image_binary) = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+	- # function call
 	- import rlsa
 	- image_rlsa_horizontal = rlsa.rlsa(image_binary, True, False, 10)
 
