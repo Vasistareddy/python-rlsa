@@ -4,14 +4,14 @@
 	- It mainly uses in Document Image Processing to extract out the ROI(region of interest) like block-of-text/title/content with applied heuristics.
 
 # Input & Output
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**output of 3 cases with value "10" are in the below image**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**output of 3 cases with value "10" are in the below image**
 ![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/test_images/image1.jpeg)
 
 # Prerequisites
 	
 	- python3.5+
 	- Image must be a binary(255's/1's/0's)
-	- Must pass a predefined limit, a certain "value"
+	- Must pass a predefined limit, a certain integer "value"
 
 # How it works
 
