@@ -1,4 +1,3 @@
-from typing import List
 import numpy
 
 def iteration(image: numpy.ndarray, value: int) -> numpy.ndarray:
@@ -29,7 +28,7 @@ def rlsa(image: numpy.ndarray, horizontal: bool = True, vertical: bool = True, v
     """
     
     if isinstance(image, numpy.ndarray): # image must be binary of ndarray type
-        value = value if value>=0 else 0 # consecutive pixel position checker value to convert 255 to 0
+        value = int(value) if value>=0 else 0 # consecutive pixel position checker value to convert 255 to 0
         try:
             # RUN LENGTH SMOOTHING ALGORITHM working horizontally on the image
             if horizontal:
