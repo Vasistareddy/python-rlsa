@@ -5,24 +5,28 @@
 
 # Input & Output
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**output of 3 cases with value "10" are in the below image**
-![Input](https://github.com/Vasistareddy/python-rlsa/blob/master/test_images/image1.jpeg)
+![Input&Output](https://github.com/Vasistareddy/python-rlsa/blob/master/test_images/image1.jpeg)
+
+# Sample Test Case
+
+	- value = 3
+	- input - [0, 0, 255, 255, 255, 0, 0, 255, 0, 0, 255, 0, 255]
+	- output - [0, 0, 255, 255, 255, 0, 0, 0, 0, 0, 0, 0, 255]
+
+# Unittest Results
+
+![Unittest](https://github.com/Vasistareddy/python-rlsa/blob/master/test_images/unittest.png)
 
 # Prerequisites
 	
 	- python3.5+
-	- Image must be a binary(255's/1's/0's)
+	- Image must be a binary ndarray(255's/1's/0's)
 	- Must pass a predefined limit, a certain integer "value"
 
 # How it works
 
 	- '255'(white pixel) wil be converted to '0'(black pixel) in a image, if the number of adjacent 255's are less than the predefined limit "value".
 	- The "value" varies among the different images.
-
-# Test Case
-
-	- value = 3
-	- input - [0, 0, 255, 255, 255, 0, 0, 255, 0, 0, 255, 0, 255]
-	- output - [0, 0, 255, 255, 255, 0, 0, 0, 0, 0, 0, 0, 255]
 
 # Install requirements
 
@@ -37,11 +41,11 @@
 # Parameters
 
 	- image - numpy.ndarray(required)
-	- horizantal - boolean
-	- vertial - boolean
-	- value - any positive integer(int)
+	- horizantal - boolean(required)
+	- vertial - boolean(required)
+	- value - any positive integer(int)(required)
 
-# IPython Usage
+# IPython Usage to convert Image to Binary and RLSA application
 
 	- # convert the image to binary
 	- import cv2
