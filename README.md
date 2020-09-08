@@ -1,7 +1,7 @@
 # Description
 
 	- RUN LENGTH SMOOTHING ALGORITHM(RLSA) is a method mainly used for block segmentation and text discrimination.
-	- It is mainly used in Document Image Processing to extract out the ROI(region of interest) like block-of-text/title/content with applied heuristics.
+	- It mainly uses in Document Image Processing to extract out the ROI(region of interest) like block-of-text/title/content with applied heuristics.
 
 # Input & Output
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**output of 3 cases with value "10" are in the below image**
@@ -53,17 +53,8 @@
 	- gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 	- (thresh, image_binary) = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 	- # function call
-	- import pythonRLSA as rlsa
+	- import rlsa
 	- image_rlsa_horizontal = rlsa.rlsa(image_binary, True, False, 10)
 
-# New in latest version
-    - Implemented the algorithm using Python C Extension and Numpy C API
-    - Reduced processing time from an average of 5 - 10 secs to 0.004 - 0.008 secs
-    
-# Installation instructions
-    - cd to the project
-    - then cd to the rlsa folder - 'cd rlsa'
-    - run 'python setup.py build' to build the source
-    - run 'python setup.py install' to install
-    - import module as 'import pythonRLSA as rlsa'
+
 
